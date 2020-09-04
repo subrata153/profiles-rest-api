@@ -9,6 +9,7 @@ router = DefaultRouter()
 """we only need to specify the basename if we are not creating a view set that doesn't have queryset or if we want to ovveride the name of the queryset"""
 router.register('hello-viewset', views.HelloViewSet, basename='hello-viewset')
 router.register('profile', views.UserProfileViewSet)
+router.register('feed', views.UserProfileFeedViewSet)
 
 
 urlpatterns = [
